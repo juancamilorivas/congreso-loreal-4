@@ -12,6 +12,19 @@
       crossorigin="anonymous"
     />
     <style>
+      @font-face {
+        font-family: "LOREAL-Essentielle-Bold";
+        src: url("./font/LOREAL-Essentielle-Bold.ttf") format("opentype");
+        /* Si la fuente es un archivo .otf, usa el siguiente formato en lugar del formato truetype:
+        src: url('ruta/del/archivo/fuente.otf') format('opentype'); */
+      }
+
+      @font-face {
+        font-family: "LOREAL-Essentielle-Regular";
+        src: url("./font/LOREAL-Essentielle-Regular.ttf") format("opentype");
+        /* Si la fuente es un archivo .otf, usa el siguiente formato en lugar del formato truetype:
+        src: url('ruta/del/archivo/fuente.otf') format('opentype'); */
+      }
       * {
         box-sizing: border-box;
         margin: 0;
@@ -22,7 +35,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #f7f7f7;
+        background: rgb(245, 245, 245);
+        background: radial-gradient(
+          circle,
+          rgba(245, 245, 245, 1) 0%,
+          rgba(255, 255, 255, 1) 100%
+        );
+        font-family: "LOREAL-Essentielle-Regular";
         padding: 10px;
       }
 
@@ -32,19 +51,16 @@
         border: 1px solid #ccc;
         border-radius: 10px;
         background-color: #ffffff;
+        box-shadow: 0px 5px 15px rgba(120, 78, 175, 0.25);
       }
 
       .titulo {
-        text-align: center;
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 16px;
+         text-align: center;
+        font-size: 18px;
+        font-family: "LOREAL-Essentielle-Bold";
       }
 
-      .subtitulo {
-        text-align: center;
-        font-size: 18px;
-      }
+  
       .margin-small {
         margin-right: 20px;
       }
@@ -57,6 +73,7 @@
       }
 
       .image-banner {
+        border-radius: 10px;
         width: 100%; /* Hace que la imagen tenga un 100% de ancho y ocupe todo el ancho del div */
       }
 
@@ -162,7 +179,7 @@
         </div>
       </div>
 
-      <h2 class="subtitulo">
+      <h2 class="titulo mb-4">
         Regístrate, haz parte de la comunidad médica de L'Oréal y recibe en
         primicia noticias, próximos congresos y lanzamientos de productos
       </h2>
@@ -275,17 +292,25 @@
               <option value="Quetzaltenango">Quetzaltenango</option>
               <option value="San Miguel Petapa">San Miguel Petapa</option>
               <option value="Escuintla">Escuintla</option>
-              <option value="San Juan Sacatepéquez">San Juan Sacatepéquez</option>
+              <option value="San Juan Sacatepéquez">
+                San Juan Sacatepéquez
+              </option>
               <option value="Villa Canales">Villa Canales</option>
               <option value="Chimaltenango">Chimaltenango</option>
               <option value="Amatitlán">Amatitlán</option>
               <option value="Totonicapán">Totonicapán</option>
-              <option value="Santa Catarina Pinula">Santa Catarina Pinula</option>
-              <option value="Santa Lucía Cotzumalguapa">Santa Lucía Cotzumalguapa</option>
+              <option value="Santa Catarina Pinula">
+                Santa Catarina Pinula
+              </option>
+              <option value="Santa Lucía Cotzumalguapa">
+                Santa Lucía Cotzumalguapa
+              </option>
               <option value="Puerto Barrios">Puerto Barrios</option>
               <option value="Cobán">Cobán</option>
               <option value="Jutiapa">Jutiapa</option>
-              <option value="San Pedro Sacatepéquez">San Pedro Sacatepéquez</option>
+              <option value="San Pedro Sacatepéquez">
+                San Pedro Sacatepéquez
+              </option>
               <option value="Mazatenango">Mazatenango</option>
               <option value="Chichicastenango">Chichicastenango</option>
               <option value="Retalhuleu">Retalhuleu</option>
@@ -294,9 +319,13 @@
               <option value="San Benito">San Benito</option>
               <option value="Barberena">Barberena</option>
               <option value="La Gomera">La Gomera</option>
-              <option value="San Francisco El Alto">San Francisco El Alto</option>
+              <option value="San Francisco El Alto">
+                San Francisco El Alto
+              </option>
               <option value="Sololá">Sololá</option>
-              <option value="Santa Cruz del Quiché">Santa Cruz del Quiché</option>
+              <option value="Santa Cruz del Quiché">
+                Santa Cruz del Quiché
+              </option>
               <option value="San José Pinula">San José Pinula</option>
               <option value="San Pedro Ayampuc">San Pedro Ayampuc</option>
               <option value="San Marcos">San Marcos</option>
@@ -307,7 +336,9 @@
               <option value="Palencia">Palencia</option>
               <option value="Chinautla">Chinautla</option>
               <option value="Puerto San José">Puerto San José</option>
-              <option value="San Pedro Sacatepéquez">San Pedro Sacatepéquez</option>
+              <option value="San Pedro Sacatepéquez">
+                San Pedro Sacatepéquez
+              </option>
               <option value="Santa María de Jesús">Santa María de Jesús</option>
               <option value="Patzicía">Patzicía</option>
               <option value="San Juan Ostuncalco">San Juan Ostuncalco</option>
@@ -371,7 +402,7 @@
         </div>
 
         <button class="ov-btn-slide-left" type="submit">
-          SUSCRIBETE AL BOLETIN
+          SUSCRÍBETE AL BOLETÍN
         </button>
       </form>
     </div>
